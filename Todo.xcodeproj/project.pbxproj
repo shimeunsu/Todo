@@ -12,6 +12,8 @@
 		53362F9C2095286000580B2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53362F9A2095286000580B2C /* Main.storyboard */; };
 		53362F9E2095286100580B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53362F9D2095286100580B2C /* Assets.xcassets */; };
 		53362FA12095286100580B2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53362F9F2095286100580B2C /* LaunchScreen.storyboard */; };
+		53A413FE20C89B18006A24EC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A413FD20C89B18006A24EC /* Item.swift */; };
+		53A4140520C8A4DB006A24EC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A4140420C8A4DB006A24EC /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		53362F9D2095286100580B2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53362FA02095286100580B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53362FA22095286100580B2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53A413FD20C89B18006A24EC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		53A4140420C8A4DB006A24EC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		53362F8A2095286000580B2C = {
 			isa = PBXGroup;
 			children = (
+				53A4140420C8A4DB006A24EC /* Default-568h@2x.png */,
 				53362F952095286000580B2C /* Todo */,
 				53362F942095286000580B2C /* Products */,
 			);
@@ -55,13 +60,46 @@
 			isa = PBXGroup;
 			children = (
 				53362F962095286000580B2C /* AppDelegate.swift */,
-				53362F982095286000580B2C /* TodoListViewController.swift */,
-				53362F9A2095286000580B2C /* Main.storyboard */,
+				53A4140320C89B5A006A24EC /* Supporting Files */,
+				53A4140220C89B53006A24EC /* Views */,
+				53A4140120C89B40006A24EC /* Controllers */,
+				53A413FF20C89B27006A24EC /* Data Model */,
 				53362F9D2095286100580B2C /* Assets.xcassets */,
 				53362F9F2095286100580B2C /* LaunchScreen.storyboard */,
-				53362FA22095286100580B2C /* Info.plist */,
 			);
 			path = Todo;
+			sourceTree = "<group>";
+		};
+		53A413FF20C89B27006A24EC /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				53A413FD20C89B18006A24EC /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		53A4140120C89B40006A24EC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				53362F982095286000580B2C /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		53A4140220C89B53006A24EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53362F9A2095286000580B2C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53A4140320C89B5A006A24EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53362FA22095286100580B2C /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53362FA12095286100580B2C /* LaunchScreen.storyboard in Resources */,
+				53A4140520C8A4DB006A24EC /* Default-568h@2x.png in Resources */,
 				53362F9E2095286100580B2C /* Assets.xcassets in Resources */,
 				53362F9C2095286000580B2C /* Main.storyboard in Resources */,
 			);
@@ -136,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53362F992095286000580B2C /* TodoListViewController.swift in Sources */,
+				53A413FE20C89B18006A24EC /* Item.swift in Sources */,
 				53362F972095286000580B2C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MX9F75FCV6;
-				INFOPLIST_FILE = Todo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Todo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MX9F75FCV6;
-				INFOPLIST_FILE = Todo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Todo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
